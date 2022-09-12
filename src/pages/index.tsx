@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="mx-auto mb-12 aspect-square w-56 rounded-full bg-gray-400" />
       <div className="text-center">
         <div className="mb-8">
-          <h1 className="mb-3 text-3xl font-bold">Hi, I'm Andrés Sanabria</h1>
+          <h1 className="mb-3 text-3xl font-bold">Hi, I am Andrés Sanabria</h1>
           <p>
             I’m a full-stack engineer & web designer. I obsess over shipping
             products fast while learning as much as I can from those projects.
