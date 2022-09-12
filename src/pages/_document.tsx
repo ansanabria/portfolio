@@ -1,8 +1,8 @@
-import { Head, Html, Main, NextScript } from "next/document";
+import { Head, Html, Main, NextScript } from "next/document"
 
 export default function MyDocument() {
   return (
-    <Html className="scroll-smooth">
+    <Html className="dark scroll-smooth">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -15,10 +15,10 @@ export default function MyDocument() {
           rel="stylesheet"
         />
       </Head>
-      <body>
+      <body className="mx-auto max-w-sm px-4 dark:bg-primary dark:text-white">
         <Main />
         <NextScript />
       </body>
     </Html>
-  );
+  )
 }
