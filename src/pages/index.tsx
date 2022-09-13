@@ -1,3 +1,4 @@
+import Head from "next/head"
 import {
   AiFillGithub as GitHubIcon,
   AiOutlineTwitter as TwitterIcon,
@@ -93,6 +94,14 @@ const PostCard = () => {
 export default function HomePage() {
   return (
     <div className="space-y-16">
+      <Head>
+        <title>Andrés Sanabria developer portfolio</title>
+        <meta
+          name="description"
+          content="See the showcase of my recent projects, the technologies I used and my
+          blog posts. I am Andrés Sanabria."
+        />
+      </Head>
       <HeroSection />
       <ProjectsSection />
       <BlogSection />
