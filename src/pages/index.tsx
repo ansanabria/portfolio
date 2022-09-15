@@ -37,6 +37,7 @@ const HeroSection = () => {
           <a
             href="https://github.com/jandrev1312"
             target="_blank"
+            rel="noreferrer"
             title="GitHub icon"
           >
             <GitHubIcon className="h-8 w-8 duration-200 ease-in hover:scale-110" />
@@ -44,6 +45,7 @@ const HeroSection = () => {
           <a
             href="https://twitter.com/jandrev1312"
             target="_blank"
+            rel="noreferrer"
             title="Twitter icon"
           >
             <TwitterIcon className="h-8 w-8 fill-twitter duration-200 ease-in hover:scale-110" />
@@ -51,6 +53,7 @@ const HeroSection = () => {
           <a
             href="https://www.linkedin.com/in/jandrev/"
             target="_blank"
+            rel="noreferrer"
             title="Linkedin icon"
           >
             <LinkedinIcon className="h-8 w-8 fill-linkedin duration-200 ease-in hover:scale-110" />
@@ -58,6 +61,7 @@ const HeroSection = () => {
           <a
             href="https://blog.jandrev.com/"
             target="_blank"
+            rel="noreferrer"
             title="Hashnode icon"
           >
             <HashnodeIcon className="h-8 w-8 fill-hashnode duration-200 ease-in hover:scale-110" />
@@ -122,6 +126,7 @@ const ProjectCard = ({
           <a
             className="group flex items-center space-x-1"
             href={websiteUrl}
+            rel="noreferrer"
             target="_blank"
           >
             <ExternalLinkIcon size={20} />
@@ -132,6 +137,7 @@ const ProjectCard = ({
           <a
             className="group flex items-center space-x-1"
             href={githubUrl}
+            rel="noreferrer"
             target="_blank"
           >
             <GitHubIcon size={20} />
@@ -143,6 +149,7 @@ const ProjectCard = ({
             <a
               className="group flex items-center space-x-1"
               href={figmaUrl}
+              rel="noreferrer"
               target="_blank"
             >
               <FigmaIcon />
