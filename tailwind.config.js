@@ -12,6 +12,7 @@ module.exports = {
         secondary: "#1E293B",
         twitter: "#1DA1F2",
         hashnode: "#2962FF",
+        linkedin: "#0077B5",
       },
     },
   },
