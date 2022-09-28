@@ -7,10 +7,11 @@ import {
   AiFillLinkedin as LinkedinIcon,
   AiOutlineTwitter as TwitterIcon,
 } from "react-icons/ai"
-import { BsDot } from "react-icons/bs"
-import { FiExternalLink as ExternalLinkIcon } from "react-icons/fi"
-import { SiHashnode as HashnodeIcon } from "react-icons/si"
-import { FiFigma as FigmaIcon } from "react-icons/fi"
+import {
+  FiExternalLink as ExternalLinkIcon,
+  FiFigma as FigmaIcon,
+} from "react-icons/fi"
+import { v4 as uuidv4 } from "uuid"
 
 const TagsColors: Record<TagsKeys, string> = {
   Figma: "bg-purple-600",
@@ -19,6 +20,9 @@ const TagsColors: Record<TagsKeys, string> = {
   Astro: "bg-orange-600",
   React: "bg-cyan-600",
   "Next.js": "bg-green-600",
+  MDX: "bg-rose-600",
+  "REST API": "bg-lime-600",
+  Typescript: "bg-indigo-600",
 }
 
 const HeroSection = () => {
@@ -29,7 +33,7 @@ const HeroSection = () => {
         <div className="mb-8 max-w-md">
           <h1 className="mb-3 text-3xl font-bold">Hi, I am Andrés Sanabria</h1>
           <p className="md:text-md">
-            I’m a full-stack engineer & web designer. I obsess over shipping
+            I’m a frontend engineer & web designer. I obsess over shipping
             products fast while learning as much as I can from those projects.
           </p>
         </div>
@@ -58,14 +62,6 @@ const HeroSection = () => {
           >
             <LinkedinIcon className="h-8 w-8 fill-linkedin duration-200 ease-in hover:scale-110" />
           </a>
-          <a
-            href="https://blog.jandrev.com/"
-            target="_blank"
-            rel="noreferrer"
-            title="Hashnode icon"
-          >
-            <HashnodeIcon className="h-8 w-8 fill-hashnode duration-200 ease-in hover:scale-110" />
-          </a>
         </div>
       </div>
     </div>
@@ -77,19 +73,8 @@ const ProjectsSection = () => {
     <div className="space-y-4">
       <h2 className="text-2xl font-bold">Projects</h2>
       {projects.map((project) => (
-        <ProjectCard key={project.id} {...project} />
+        <ProjectCard key={uuidv4()} {...project} />
       ))}
-    </div>
-  )
-}
-
-const BlogSection = () => {
-  return (
-    <div className="space-y-4">
-      <h2 className="text-2xl font-bold">Posts</h2>
-      <PostCard />
-      <PostCard />
-      <PostCard />
     </div>
   )
 }
@@ -134,17 +119,19 @@ const ProjectCard = ({
               Website
             </span>
           </a>
-          <a
-            className="group flex items-center space-x-1"
-            href={githubUrl}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <GitHubIcon size={20} />
-            <span className="underline-offset-4 group-hover:underline">
-              Code
-            </span>
-          </a>
+          {githubUrl && (
+            <a
+              className="group flex items-center space-x-1"
+              href={githubUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <GitHubIcon size={20} />
+              <span className="underline-offset-4 group-hover:underline">
+                Code
+              </span>
+            </a>
+          )}
           {figmaUrl && (
             <a
               className="group flex items-center space-x-1"
@@ -174,20 +161,6 @@ const ProjectLabel = ({ tag }: { tag: TagsKeys }) => {
   )
 }
 
-const PostCard = () => {
-  return (
-    <div className="flex flex-col items-center justify-center space-y-8 rounded-md bg-secondary p-6 md:items-start md:space-y-3">
-      <h3 className="text-xl font-medium">Post title</h3>
-      <div className="flex items-center space-x-3 text-sm font-light">
-        <div>X months ago</div>
-        <BsDot className="aspect-square w-4" />
-        <div>X min to read</div>
-      </div>
-      <p className="w-full opacity-70">Post description</p>
-    </div>
-  )
-}
-
 export default function HomePage() {
   return (
     <div className="space-y-16">
@@ -201,7 +174,6 @@ export default function HomePage() {
       </Head>
       <HeroSection />
       <ProjectsSection />
-      <BlogSection />
     </div>
   )
 }

@@ -11,10 +11,12 @@
     "upgrade-project": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
+    "@types/uuid": "^8.3.4",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/node": "18.7.13",
