@@ -37,7 +37,7 @@ export const projects: ProjectDataProps[] = [
     title: "Website for Cartulinas Sanabria SAS",
     websiteUrl: "https://cartulinasanabria.vercel.app/",
     description:
-      "Marketing site for the company Cartulinas Sanabria SAS. Because of a CDA, I cannot show the code nor the Figma design of the website.",
+      "Website for the company Cartulinas Sanabria SAS. Because of a CDA, I cannot show the code nor the Figma design of the website.",
     image: MarketingImage,
     tags: ["Figma", "Next.js", "React", "Tailwind", "MDX", "Typescript"],
   },
