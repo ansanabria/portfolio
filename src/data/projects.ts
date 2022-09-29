@@ -9,6 +9,7 @@ export const projects: ProjectDataProps[] = [
   {
     title: "StreamFinder",
     websiteUrl: "https://cinema-finder.vercel.app/",
+    githubUrl: "https://github.com/jandrev1312/stream-finder",
     description:
       "Search engine for finding out in which streaming service a movie or TV show is. It currently works only in Colombia.",
     image: MovieImage,
