@@ -7,6 +7,7 @@ import {
   AiFillLinkedin as LinkedinIcon,
   AiOutlineTwitter as TwitterIcon,
 } from "react-icons/ai"
+import ProfileImage from "@/../public/images/profile.png"
 import {
   FiExternalLink as ExternalLinkIcon,
   FiFigma as FigmaIcon,
@@ -28,7 +29,9 @@ const TagsColors: Record<TagsKeys, string> = {
 const HeroSection = () => {
   return (
     <div className="flex flex-col md:flex-row-reverse md:items-center md:justify-between">
-      <div className="mx-auto mb-12 aspect-square w-56 rounded-full bg-gray-400 md:m-0" />
+      <div className="relative mx-auto mb-12 aspect-square w-56 rounded-full bg-gray-400 md:m-0">
+        <Image src={ProfileImage} layout="fill" priority />
+      </div>
       <div className="text-center md:text-left">
         <div className="mb-8 max-w-md">
           <h1 className="mb-3 text-3xl font-bold">Hi, I am Andrés Sanabria</h1>
