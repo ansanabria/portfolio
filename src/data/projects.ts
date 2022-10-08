@@ -7,9 +7,9 @@ import { ProjectDataProps } from "@/types"
 
 export const projects: ProjectDataProps[] = [
   {
-    title: "StreamFinder",
-    websiteUrl: "https://cinema-finder.vercel.app/",
-    githubUrl: "https://github.com/jandrev1312/stream-finder",
+    title: "DóndeVeo",
+    websiteUrl: "https://www.dondeveo.co/",
+    githubUrl: "https://github.com/jandrev1312/dondeveo",
     description:
       "Search engine for finding out in which streaming service a movie or TV show is. It currently works only in Colombia.",
     image: MovieImage,
@@ -17,12 +17,14 @@ export const projects: ProjectDataProps[] = [
   },
   {
     title: "Blog for the poetry group of Universidad de los Andes, Colombia",
-    websiteUrl: "https://poesia-uniandes-blog.vercel.app/",
+    websiteUrl: "https://www.poesiauniandes.com/",
     githubUrl: "https://github.com/jandrev1312/poesia-uniandes",
+    figmaUrl:
+      "https://www.figma.com/file/0AS4oNaWsHlzIW9Blae0y1/Poes%C3%ADa-Uniandes---Blog?node-id=0%3A1",
     description:
       "Blog for the poetry group of Universidad de los Andes, Colombia.",
     image: BooksImage,
-    tags: ["Astro", "Tailwind"],
+    tags: ["Astro", "Tailwind", "React", "CMS", "Typescript", "Figma"],
   },
   {
     title: "Developer portfolio for showcasing my work",

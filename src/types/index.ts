@@ -10,6 +10,7 @@ export type TagsKeys =
   | "MDX"
   | "REST API"
   | "Typescript"
+  | "CMS"
 
 export interface ProjectCardProps {
   title: string

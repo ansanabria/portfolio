@@ -24,6 +24,7 @@ const TagsColors: Record<TagsKeys, string> = {
   MDX: "bg-rose-600",
   "REST API": "bg-lime-600",
   Typescript: "bg-indigo-600",
+  CMS: "bg-fuchsia-600",
 }
 
 const HeroSection = () => {
