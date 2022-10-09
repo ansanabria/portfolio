@@ -31,7 +31,12 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col md:flex-row-reverse md:items-center md:justify-between">
       <div className="relative mx-auto mb-12 aspect-square w-56 rounded-full bg-gray-400 md:m-0">
-        <Image src={ProfileImage} layout="fill" priority />
+        <Image
+          src={ProfileImage}
+          alt="Profile picture"
+          layout="fill"
+          priority
+        />
       </div>
       <div className="text-center md:text-left">
         <div className="mb-8 max-w-md">
