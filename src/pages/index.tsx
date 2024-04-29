@@ -43,7 +43,7 @@ const HeroSection = () => {
         <div className="mb-8 max-w-md">
           <h1 className="mb-3 text-3xl font-bold">Hi, I am Andrés Sanabria</h1>
           <p className="md:text-md">
-            I'm a web developer. Currently learning React, Node and some other
+            I`m a web developer. Currently learning React, Node and some other
             stuff. Occasionally I like to write.
           </p>
         </div>
