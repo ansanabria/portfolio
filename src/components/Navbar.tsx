@@ -6,14 +6,6 @@ export const Navbar = () => {
       <Link href="/">
         <a className="text-xl font-bold">A. Sanabria</a>
       </Link>
-      <a
-        href="https://drive.google.com/file/d/17GrzgimnMeaFP7sfPnHsVZpmZdJtBkRJ/view?usp=sharing"
-        target="_blank"
-        rel="noreferrer"
-        className="absolute bottom-0 right-0 font-medium transition-opacity hover:opacity-70"
-      >
-        CV
-      </a>
     </nav>
   )
 }

@@ -25,6 +25,7 @@ const TagsColors: Record<TagsKeys, string> = {
   "REST API": "bg-lime-600",
   Typescript: "bg-indigo-600",
   CMS: "bg-fuchsia-600",
+  "Web workers": "bg-yellow-600",
 }
 
 const HeroSection = () => {
@@ -42,13 +43,13 @@ const HeroSection = () => {
         <div className="mb-8 max-w-md">
           <h1 className="mb-3 text-3xl font-bold">Hi, I am Andrés Sanabria</h1>
           <p className="md:text-md">
-            I’m a frontend engineer & web designer. I obsess over shipping
-            products fast while learning as much as I can from those projects.
+            I'm a web developer. Currently learning React, Node and some other
+            stuff. Occasionally I like to write.
           </p>
         </div>
         <div className="flex justify-center space-x-8 md:justify-start">
           <a
-            href="https://github.com/jandrev1312"
+            href="https://github.com/ansanabria"
             target="_blank"
             rel="noreferrer"
             title="GitHub icon"
@@ -56,7 +57,7 @@ const HeroSection = () => {
             <GitHubIcon className="h-8 w-8 duration-200 ease-in hover:scale-110" />
           </a>
           <a
-            href="https://twitter.com/jandrev1312"
+            href="https://twitter.com/ansanabria__"
             target="_blank"
             rel="noreferrer"
             title="Twitter icon"
@@ -64,7 +65,7 @@ const HeroSection = () => {
             <TwitterIcon className="h-8 w-8 fill-twitter duration-200 ease-in hover:scale-110" />
           </a>
           <a
-            href="https://www.linkedin.com/in/jandrev/"
+            href="https://www.linkedin.com/in/ansanabria12/"
             target="_blank"
             rel="noreferrer"
             title="Linkedin icon"

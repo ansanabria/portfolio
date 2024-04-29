@@ -11,6 +11,7 @@ export type TagsKeys =
   | "REST API"
   | "Typescript"
   | "CMS"
+  | "Web workers"
 
 export interface ProjectCardProps {
   title: string
